@@ -27,6 +27,22 @@ module.exports = appInfo => {
     domainWhiteList: [ '*' ],
   };
 
+  config.view = {
+    mapping: { '.html': 'ejs' },
+  };
+
+  exports.mysql = {
+    client: {
+      host: 'localhost',
+      port: '3306',
+      user: 'root',
+      password: 'shshxy00',
+      database: 'egg-test',
+    },
+    app: true,
+    agent: false,
+  };
+
   // add your user config here
   const userConfig = {
     // myAppName: 'egg',
