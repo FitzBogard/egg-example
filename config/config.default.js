@@ -48,6 +48,10 @@ module.exports = appInfo => {
     // myAppName: 'egg',
   };
 
+  config.jwt = {
+    secret: 'Nick',
+  };
+
   return {
     ...config,
     ...userConfig,
